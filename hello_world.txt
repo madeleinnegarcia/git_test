@@ -1,0 +1,5 @@
+Elemento de cabeza
+El <head>elemento es donde colocamos metainformación importante 
+sobre nuestras páginas web y el material necesario para que nuestras 
+páginas web se muestren correctamente en el navegador. Dentro del elemento 
+no deberíamos<head> usar ningún elemento que muestre contenido en la página web.
