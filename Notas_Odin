@@ -1,0 +1,30 @@
+Aquí, tanto la regla 1 como la regla 2 tienen la misma especificidad. 
+La regla 1 utiliza un selector de encadenamiento (sin espacio) y 
+la regla 2 utiliza un combinador descendiente (el espacio vacío). 
+Pero ambas reglas tienen dos clases y el símbolo del combinador 
+en sí no agrega especificidad.
+
+/* rule 1 */
+.class.second-class {
+  font-size: 12px;
+}
+
+/* rule 2 */
+.class .second-class {
+  font-size: 24px;
+}
+
+Este ejemplo muestra lo mismo. Aunque la regla 2 utiliza un combinador secundario ( >), 
+esto no cambia el valor de especificidad. Ambas reglas siguen teniendo dos clases, 
+por lo que tienen los mismos valores de especificidad.
+
+
+/* rule 1 */
+.class.second-class {
+  font-size: 12px;
+}
+
+/* rule 2 */
+.class > .second-class {
+  font-size: 24px;
+}
